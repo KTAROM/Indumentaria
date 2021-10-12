@@ -1,0 +1,11 @@
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Biblioteca\bin\Debug\Indumentaria.Biblioteca.dll
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Biblioteca\bin\Debug\Indumentaria.Biblioteca.pdb
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Biblioteca\obj\Debug\Indumentaria.Biblioteca.csproj.AssemblyReference.cache
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Biblioteca\obj\Debug\Indumentaria.Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Biblioteca\obj\Debug\Indumentaria.Biblioteca.dll
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Biblioteca\obj\Debug\Indumentaria.Biblioteca.pdb
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Biblioteca\bin\Debug\Indumentaria.Excepciones.dll
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Biblioteca\bin\Debug\Indumentaria.Excepciones.pdb
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Biblioteca\obj\Debug\Indumentaria.Biblioteca.csproj.CopyComplete
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Biblioteca\bin\Debug\Indumentaria.Utils.dll
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Biblioteca\bin\Debug\Indumentaria.Utils.pdb

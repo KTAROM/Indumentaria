@@ -1,0 +1,6 @@
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Utils\bin\Debug\Indumentaria.Utils.dll
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Utils\bin\Debug\Indumentaria.Utils.pdb
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Utils\obj\Debug\Indumentaria.Utils.csproj.CoreCompileInputs.cache
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Utils\obj\Debug\Indumentaria.Utils.dll
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Utils\obj\Debug\Indumentaria.Utils.pdb
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Utils\obj\Debug\Indumentaria.Utils.csproj.AssemblyReference.cache

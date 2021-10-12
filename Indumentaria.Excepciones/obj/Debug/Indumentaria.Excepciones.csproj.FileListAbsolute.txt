@@ -1,0 +1,5 @@
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Excepciones\bin\Debug\Indumentaria.Excepciones.dll
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Excepciones\bin\Debug\Indumentaria.Excepciones.pdb
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Excepciones\obj\Debug\Indumentaria.Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Excepciones\obj\Debug\Indumentaria.Excepciones.dll
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Excepciones\obj\Debug\Indumentaria.Excepciones.pdb

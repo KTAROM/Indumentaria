@@ -1,0 +1,14 @@
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Consola.exe.config
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Consola.exe
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Consola.pdb
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Biblioteca.dll
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Biblioteca.pdb
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\obj\Debug\Indumentaria.Consola.csproj.AssemblyReference.cache
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\obj\Debug\Indumentaria.Consola.csproj.CoreCompileInputs.cache
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\obj\Debug\Indumentaria.Consola.csproj.CopyComplete
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\obj\Debug\Indumentaria.Consola.exe
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\obj\Debug\Indumentaria.Consola.pdb
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Excepciones.dll
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Excepciones.pdb
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Utils.dll
+C:\Users\Romina\source\repos\Indumentaria\Indumentaria.Consola\bin\Debug\Indumentaria.Utils.pdb
