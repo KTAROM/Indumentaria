@@ -38,7 +38,7 @@ namespace Indumentaria.Biblioteca.Entidades
             get { return this._Talle; }
             set { this._Talle = value; }
         }
-        public Indumentaria1(TipoIndumentaria Tipo, int Codigo, int Stock, string Talle, double Precio)
+        public Indumentaria1(TipoIndumentaria Tipo, int Codigo, string Talle, double Precio, int Stock = 3)
         {
             this._Tipo = Tipo;
             this._Codigo = Codigo;

@@ -28,7 +28,8 @@ namespace Indumentaria.Biblioteca.Entidades
             if(this._TieneEstampado)
             { estampado = "SI"; }
             else { estampado = "NO"; }
-            string Detalle = "Prenda: CAMISA" + "\nTipo de manga: " + this._Manga + "\nEstampado: " + estampado;
+            string Detalle = "Prenda: CAMISA" + "\nTipo de manga: " + this._Manga + "\nEstampado: " + estampado + "\nTalle: " + this.Talle + " Cantidad Stock: " + this.Stock +
+            " Precio: " + this.Precio;
             return Detalle;
         }
     }

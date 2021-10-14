@@ -191,6 +191,26 @@ namespace Indumentaria.Utils
             }
             return Valido;
         }
+        public static bool PedirSoN(string nombre)
+        {
+            bool estado;
+            string SoN;
+            do
+            {
+                estado = true;
+                Console.WriteLine(nombre);
+                SoN = Console.ReadLine();
+                if (SoN.ToUpper() != "S" && SoN.ToUpper() != "N")
+                {
+                    estado = false;
+                    MsjErr();
+                }
+            } while (!estado);
+
+            if (SoN.ToUpper() == "S") { return true; }
+            return false;
+
+        }
 
     }
 }

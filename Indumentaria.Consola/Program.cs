@@ -99,54 +99,69 @@ namespace Indumentaria.Consola
         }
         public static void MostrarPrendas()
         {
-            string[] TipoPrenda = Enum.GetNames(typeof(TipoPrenda));
-            foreach( var name in TipoPrenda)
-            {
-                Console.WriteLine(name);
-            }
-
+            //ALTERNATIVA USANDO UN ENUM
+            /* string[] TipoPrenda = Enum.GetNames(typeof(TipoPrenda));
+             foreach( var name in TipoPrenda)
+             {
+                 Console.WriteLine(name);
+             }
+            */
+            Console.WriteLine("1- Camisa\n2-Pantalón");
         }
         public static void MostrarTipos()
-        {
-            string[] TipoRopa = Enum.GetNames(typeof(TipoRopa));
-            foreach (var name in TipoRopa)
-            {
-                Console.WriteLine(name);
-            }
+        {// ALTERNATIVA USANDO ENUM
+            /*  string[] TipoRopa = Enum.GetNames(typeof(TipoRopa));
+              foreach (var name in TipoRopa)
+              {
+                  Console.WriteLine(name);
+              }*/
+            Console.WriteLine("1- Casual\n2- Deportiva\n3- Formal");
 
         }
 
         public static void AgregarPrenda(TiendaRopa NuevaTienda)
         {
-         
+
             MostrarPrendas();
-           
+
             string tipo = Console.ReadLine().ToLower();
-            TipoPrenda tipoPrenda = TipoPrenda.pantalon;
-
-
-            if (tipo == TipoPrenda.camisa.ToString() )
+            if (tipo =="1")
             {
-                Console.WriteLine("Usted seleccionó agregar una camisa");
+                Console.WriteLine("Usted seleccionó agregar un camisa");
                 Console.ReadKey();
-                tipoPrenda = TipoPrenda.camisa;
-                CrearCamisa(NuevaTienda);
-               
-
-            }
-            else if (tipo == TipoPrenda.pantalon.ToString())
+                CrearCamisa(NuevaTienda); }
+            else if (tipo == "2")
             {
                 Console.WriteLine("Usted seleccionó agregar un pantalón");
                 Console.ReadKey();
-                CrearPantalon(NuevaTienda);
-            }
+                CrearPantalon(NuevaTienda); }
+       
+            //ALTERNATIVA USANDO ENUM
+                /* TipoPrenda tipoPrenda = TipoPrenda.pantalon;
+
+
+                 if (tipo == TipoPrenda.camisa.ToString() )
+                 {
+                     Console.WriteLine("Usted seleccionó agregar una camisa");
+                     Console.ReadKey();
+                     tipoPrenda = TipoPrenda.camisa;
+                     CrearCamisa(NuevaTienda);
+
+
+                 }
+                 else if (tipo == TipoPrenda.pantalon.ToString())
+                 {
+                     Console.WriteLine("Usted seleccionó agregar un pantalón");
+                     Console.ReadKey();
+                     CrearPantalon(NuevaTienda);
+                 }*/
             else
             {
                 Console.WriteLine("El valor Ingresado es incorrecto");
                 Console.ReadKey();
-              
+
             }
-         
+        
 
         }
 
@@ -159,21 +174,40 @@ namespace Indumentaria.Consola
             MostrarTipos();
 
             string tipo = Console.ReadLine().ToLower();
-            if (tipo != TipoRopa.casual.ToString() && tipo != TipoRopa.deportiva.ToString() && 
+            //ALTERNATIVA USANDO ENUM
+           /* if (tipo != TipoRopa.casual.ToString() && tipo != TipoRopa.deportiva.ToString() && 
                 tipo != TipoRopa.formal.ToString())
             {
                 Console.WriteLine("El valor Ingresado es incorrecto");
                 Console.ReadKey();
                 estado = false;
-            }
+            }*/
+           
             if (estado)
             {
-                TipoRopa tipoRopa = TipoRopa.formal;
+               // TipoRopa tipoRopa = TipoRopa.formal;
                 string origen = ConsolaUtils.PedirNombre("Indique el origen de la prenda");
 
                 double porcentaje = ConsolaUtils.PedirDouble("Indique el porcentaje de algodón que posee la prenda");
 
-                if (tipo == TipoRopa.casual.ToString())
+               if(tipo=="1")
+                {
+                    TipoIndumentaria Tipo = new IndumetariaCasual(origen, porcentaje);
+                    Prenda.Tipo = Tipo;
+                }
+               else if(tipo=="2")
+                {
+                    TipoIndumentaria Tipo = new IndumentariaDeportiva(origen, porcentaje);
+                    Prenda.Tipo = Tipo;
+                }
+               else if(tipo=="3")
+                {
+                    TipoIndumentaria Tipo = new IndumentariaFormal(origen, porcentaje);
+                    Prenda.Tipo = Tipo;
+
+                }
+
+              /* if (tipo == TipoRopa.casual.ToString())
                 {
                     tipoRopa = TipoRopa.casual;
                     TipoIndumentaria Tipo = new IndumetariaCasual(origen, porcentaje);
@@ -191,7 +225,7 @@ namespace Indumentaria.Consola
                     tipoRopa = TipoRopa.formal;
                     TipoIndumentaria Tipo = new IndumentariaFormal(origen, porcentaje);
                     Prenda.Tipo = Tipo;
-                }
+                }*/
             }
         
         }
@@ -305,6 +339,7 @@ namespace Indumentaria.Consola
                     else
                     {
                         VentaItem Orden = new VentaItem(cantidad, prenda);
+                        prenda.Stock -= cantidad;
                         Console.WriteLine("Se ingreso el item a su orden");
                     }     
                     bool estado;
@@ -353,6 +388,7 @@ namespace Indumentaria.Consola
             }
 
             else { Console.WriteLine("Usted seleccionó un pantalón"); }
+           
             return tipoPrenda;
         }
 
@@ -378,13 +414,18 @@ namespace Indumentaria.Consola
 
         public static void Modificar(TiendaRopa NuevaTienda, Indumentaria1 Prenda)
         {
-
-            int cantidad = ConsolaUtils.PedirInt("Ingrese la cantidad de prendas");
-            Prenda.Stock = cantidad;
+                       
             string talle = ConsolaUtils.PedirNombre("Indique el talle de la prenda");
             Prenda.Talle = talle;
             double precio = ConsolaUtils.PedirDouble("Indique el precio de la prenda");
             Prenda.Precio = precio;
+            bool opcion = ConsolaUtils.PedirSoN("Desea ingresar unidades al stock S/N");
+            if (opcion == true)
+            {
+                int cantidad = ConsolaUtils.PedirInt("Ingrese la cantidad de prendas (cantidad mínima 3 prendas)");
+                if (cantidad > 3)
+                { Prenda.Stock = cantidad; }
+            }
         }
     }
 }

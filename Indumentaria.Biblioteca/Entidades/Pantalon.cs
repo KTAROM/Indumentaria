@@ -23,7 +23,8 @@ namespace Indumentaria.Biblioteca.Entidades
             if(this._TieneBolsillos)
             { bolsillos = "SI"; }
             else { bolsillos = "NO"; }
-            string Detalle = "Prenda: PANTALON" + "\nTipo de material: " + this._Material + "\nPosee bolsillos: " + bolsillos;
+            string Detalle = "Prenda: PANTALON" + "\nTipo de material: " + this._Material + "\nPosee bolsillos: " + bolsillos + "\nTalle: " + this.Talle + " Cantidad Stock: " + this.Stock +
+            " Precio: " + this.Precio;
             return Detalle;
 
         }
