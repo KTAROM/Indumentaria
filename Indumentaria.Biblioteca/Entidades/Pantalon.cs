@@ -16,7 +16,11 @@ namespace Indumentaria.Biblioteca.Entidades
             this._Material = Material;
             this._TieneBolsillos = Bolsillos;
         }
-        
+        public Pantalon(int codigo) : base(codigo)
+        {
+
+        }
+
         public override string GetDetalle()
         {
             string bolsillos = "";

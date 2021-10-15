@@ -17,6 +17,16 @@ namespace Indumentaria.Biblioteca.Entidades
             this._Prenda = Prenda;
         }
 
+        public Indumentaria1 Prenda
+        {
+            get { return this._Prenda; }
+        }
+        public int Cantidad
+        {
+            get { return this._Cantidad; }
+
+        }
+
         public double GetTotal()
         {
             double Total = _Prenda.Precio * this._Cantidad;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Indumentaria.Excepciones.Excepciones;
 using Indumentaria.Excepciones;
 
 namespace Indumentaria.Biblioteca.Entidades
@@ -18,6 +19,7 @@ namespace Indumentaria.Biblioteca.Entidades
         public TiendaRopa()
         {
 
+            this._Ventas = new List<Venta>();
         }
 
         public int GetProximoCodigo()
@@ -49,13 +51,22 @@ namespace Indumentaria.Biblioteca.Entidades
 
         public void IngresarOrden(Venta Orden)
         {
+            this._Ventas.Add(Orden);
 
         }
 
         public List<Venta> ListarOrden()
         {
-            List<Venta> Ordenes = new List<Venta>();
-            return Ordenes;
+            if (this._Ventas == null)
+            {
+                throw new SinVentas("Aún no se han ingresado Ordenes");
+            }
+            if (this._Ventas.Count() == 0)
+            {
+                throw new SinVentas("No hay Ordenes ingresadas");
+            }
+
+            return _Ventas;
         }
 
         public List<Indumentaria1> Listar()
@@ -76,6 +87,7 @@ namespace Indumentaria.Biblioteca.Entidades
         public void DevolverOrden(Venta Orden)
         {
 
+            _Ventas.Remove(Orden);
         }
 
     }

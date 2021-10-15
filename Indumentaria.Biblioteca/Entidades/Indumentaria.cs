@@ -62,7 +62,7 @@ namespace Indumentaria.Biblioteca.Entidades
             return detalle;
         }
 
-        public override bool Equals(object obj)
+       public override bool Equals(object obj)
         {
            if(obj!=null && obj is Indumentaria1)
             {
@@ -81,6 +81,7 @@ namespace Indumentaria.Biblioteca.Entidades
             }
             return false;
         }
+       
       
         public abstract string GetDetalle();
         
